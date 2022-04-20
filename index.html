@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrap">
+            <div class="left-side">
+                <div class="nav-link-wrap active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrap">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>Rizoan</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrap">
+            <div class="portfolio-wrap">
+
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-img-bg" style="background-image:url(bg1.jpg)"></div>
+                    <div class="img-text-wrap">
+                        <div class="logo-wrap">
+                            <img src="java-freepik.png">
+                        </div>
+
+                        <div class="subtitle">Completed grade 11 java course and currently learning how to create a 2d game.</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-img-bg" style="background-image:url(bg2.jpg)"></div>
+                    <div class="img-text-wrap">
+                        <div class="logo-wrap">
+                            <img src="pc-tower-smashicons.png">
+                        </div>
+
+                        <div class="subtitle">Assembled my own computer. Can troubleshoot technical issues.</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-img-bg" style="background-image:url(bg3.jpg)"></div>
+                    <div class="img-text-wrap">
+                        <div class="logo-wrap">
+                            <img src="tigp.png" style="width: 35%; height: auto;">
+                        </div>
+
+                        <div class="subtitle">Volunteered at Toronto Intergenerational Partnerships and improved interpersonal skills with different generations.</div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-img-bg" style="background-image:url(bg4.jpg)"></div>
+                    <div class="img-text-wrap">
+                        <div class="logo-wrap">
+                            <img src="blueprint-freepik.png">
+                        </div>
+
+                        <div class="subtitle">Constructed various woodworking projects in 9th grade. Created the framing for an isolation shack in grade 11 construction.</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-img-bg" style="background-image:url(bg5.jpg)"></div>
+                    <div class="img-text-wrap">
+                        <div class="logo-wrap">
+                            <img src="languages-freepik.png">
+                        </div>
+
+                        <div class="subtitle">Multilingual with proficiency in speaking Bengali and conversant in French.</div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrap">
+                    <div class="portfolio-img-bg" style="background-image:url(bg6.jpg)"></div>
+                    <div class="img-text-wrap">
+                        <div class="logo-wrap">
+                            <img src="processor-freepik.png">
+                        </div>
+
+                        <div class="subtitle">Directed and managed sessions of block programming with micro:bit to 8th grade class. </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems =  document.querySelectorAll('.portfolio-item-wrap')
+    portfolioItems.forEach(portfolioItem =>{
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>

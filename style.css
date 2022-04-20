@@ -1,0 +1,106 @@
+/* full page  */
+body{
+    margin: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* nav bar */
+.nav-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.left-side{
+    display: flex;
+}
+
+.nav-wrap > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9rem;
+}
+
+.nav-link-wrap{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrap a{
+    color: rgb(133, 126, 126);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrap:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrap a:hover{
+    color: black;
+}
+
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+
+/* portfolio */
+
+.portfolio-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrap{
+    position: relative;
+}
+
+.portfolio-img-bg{
+    height:350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrap{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px
+}
+
+.logo-wrap img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrap .subtitle{
+    font-weight: 600;
+    transition: 1s;
+    color: transparent;
+}
+
+.img-text-wrap:hover .subtitle{
+    font-weight: 600;
+    color: rgb(143, 133, 196)
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(15%);
+}
